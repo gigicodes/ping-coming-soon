@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.google.com/specimen/Libre+Franklin" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/869b8ad8fa.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <div class="shift">
+      <p class="dark logo">
+        ping<b class="primary">.</b> 
+      </p>
+      <p class="neutral big-txt">
+        We are launching <b class="dark">soon!</b>
+      </p>
+      <p class="small-txt">
+        Subscribe and get notified.
+      </p>
+      <form>
+        <input class="email neutral important" type="text" name="email" placeholder="Your email address..."  size="25"><input class="submit" type="submit" name="submit" value="Notify Me">
+      </form>
+      <div class="output">
+      </div>
+      <p class="output2">
+      </p>
+  </div>
+      <p>
+        <img src="images/illustration-dashboard.png">
+      </p>
+    <footer class="shift">
+      <div>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <p class="neutral"> 
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+      <!-- <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">GigiCodes</a>.
+      </p> -->
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+      function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validate() {
+  const $result = $(".output2");
+  const email = $(".email").val();
+  $result.text("");
+
+  if (validateEmail(email)) {
+    $result.text();
+  } else {
+    $result.text("Please provide a valid email address.");
+  }
+  return false;
+}
+
+$(".submit").on("click", validate);
+
+var submit = document.querySelector('.submit');
+      var email = document.querySelector('.email');
+      var output = document.querySelector('.output');
+
+      submit.addEventListener('click', message);
+
+      function message(e) {
+        if(email.value === '') {
+          output.innerHTML = "<p>Whoops! It looks like you forgot to add your email</p>" ;
+        } else {
+          e.preventDefault();
+        }
+      }
+  </script>
+</body>
+</html>

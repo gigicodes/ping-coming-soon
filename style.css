@@ -1,0 +1,114 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+body {
+    margin: 0;
+    text-align: center;
+    font-family:"libre_franklinthin",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 500px) {
+    input {
+        display: block;
+        margin-left: 20px;
+    }
+    .submit {
+        width: 300px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px; 
+    }
+    .shift {
+        margin-left: 40px;
+    }
+    img {
+        /* max-width: 100%; */
+        display: block;
+        margin: 80px;
+        padding: 0;
+        width: 50%;
+    }
+
+}
+@font-face {
+    font-family: 'libre_franklinthin';
+    src: url('librefranklin-thin-webfont.woff2') format('woff2'),
+         url('librefranklin-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.dark {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+.primary {
+    color:hsl(223, 87%, 63%);
+}
+.neutral {
+    color: hsl(0, 0%, 59%);
+}
+.big-txt {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.small-txt {
+    color: hsl(209, 33%, 12%);
+    margin: 20px 0;
+    font-size: 20px;
+}
+input {
+    font-size: 15px;
+    border: 1px hsl(0, 0%, 59%) solid;
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 30px;
+    margin:  10px 20px 0 0;
+    box-shadow: 5px 5px 2px grey;
+    outline: 0;
+}
+.submit {
+    background-color: hsl(223, 87%, 63%);
+    font-weight: bold;
+    color: white;
+    border: hsl(223, 87%, 63%);
+    box-shadow: 5px 5px 5px hsl(0, 0%, 59%);
+}
+.submit:hover {
+    cursor: pointer;
+} 
+img {
+    width: 400px;
+    margin: 35px 0;
+}
+i {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50px;
+    padding: 10px;
+}
+i:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+.output2 {
+    padding: 0;
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    font-style: italic;
+    margin-right: 200px;
+}
+.output {
+    padding: 0;
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    font-style: italic;
+    margin-right: 200px;
+}
