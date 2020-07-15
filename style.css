@@ -6,27 +6,53 @@ body {
     font-family:"libre_franklinthin",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 @media (max-width: 500px) {
-    input {
-        display: block;
-        margin-left: 20px;
+    .email {
+       /* width: 87%; */
+       margin-right: 0 !important;
     }
     .submit {
-        width: 300px;
+        width: 60%;
         padding: 15px;
         margin-top: 10px;
         margin-bottom: 5px; 
     }
-/*     .shift {
-        margin-left: 40px; */
-    }
     img {
-        /* max-width: 100%; */
-        display: block;
         margin: 80px;
         padding: 0;
-        width: 50%;
+        width: 100%;
+        
     }
-
+    form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 274px) {
+    body {
+        padding: 0 10px;
+    }
+    img {
+        width: 100% !important;
+    }
+}
+@media (max-width: 320px) {
+    body {
+        padding: 0 10px;
+    }
+    img {
+        width: 100% !important;
+    }
+}
+@media (max-width: 400px) {
+    body {
+        padding: 0 10px;
+    }
+    img {
+        width: 100% !important;
+    }
 }
 @font-face {
     font-family: 'libre_franklinthin';
@@ -65,9 +91,13 @@ input {
     border-radius: 50px;
     height: 50px;
     padding: 0 30px;
-    margin:  10px 20px 0 0;
+    margin:  10px 0 0 0;
     box-shadow: 5px 5px 2px grey;
     outline: 0;
+}
+.email {
+    /* width: 290px; */
+    margin-right: 20px;
 }
 .submit {
     background-color: hsl(223, 87%, 63%);
@@ -82,6 +112,7 @@ input {
 img {
     width: 400px;
     margin: 35px 0;
+    text-align: center;
 }
 i {
     margin-top: 0;
